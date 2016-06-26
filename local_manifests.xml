@@ -7,11 +7,11 @@
 
   <!-- One Plus One Bacon  -->
 
-  <project name="CyanogenMod/android_device_oneplus_bacon" path="device/oneplus/bacon" revision="cm-13.0" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="gh" revision="cm-13.0" />
-  <project name="CyanogenMod/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="gh" revision="cm-13.0" />
-  <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="gh" revision="cm-13.0" />
-  <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="gh" revision="cm-13.0" />
+<project name="CyanogenMod/android_device_oneplus_bacon" revision="cm-13.0" remote="gh" path="device/oneplus/bacon"/>
+<project name="CyanogenMod/android_device_qcom_common" revision="cm-13.0" remote="gh" path="device/qcom/common"/>
+<project name="CyanogenMod/android_device_oppo_msm8974-common" revision="cm-13.0" remote="gh" path="device/oppo/msm8974-common"/>
+<project name="jgcaaprom/android_device_oppo_common" revision="cm-13.0" remote="gh" path="device/oppo/common"/>
+<project name="CyanogenMod/android_kernel_oneplus_msm8974" revision="cm-13.0" remote="gh" path="kernel/oneplus/msm8974"/>
 
   <!-- One Plus One Bacon Remove -->
 
@@ -23,34 +23,41 @@
   <project name="jgcaaprom/android_device_oneplus_bacon" path="device/oneplus/bacon" revision="cm-13.0" />
   <project name="jgcaaprom/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="gh" revision="cm-13.0" />
 
-  <!-- One Plus One Bacon Vendor Replacement -->
+<!-- One Plus One Bacon Replacement -->
 
-  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="gh" revision="cm-13.0" />
-  <project name="jgcaaprom/proprietary_vendor_oneplus" path="vendor/oneplus" remote="gh" revision="cm-13.0" />
 
-  <!-- Repo Removes CyanogenMod -->
+<project name="jgcaaprom/android_device_oneplus_bacon" revision="cm-13.0" remote="gh" path="device/oneplus/bacon"/>
+<project name="jgcaap/android_kernel_oneplus_msm8974" revision="cm-13.0sc" remote="gh" path="kernel/oneplus/msm8974"/>
 
-  <remove-project name="CyanogenMod/android_vendor_cm" />
-  <remove-project name="CyanogenMod/android_build" />
-  <remove-project name="CyanogenMod/android_art" />
-  <remove-project name="CyanogenMod/android_bionic" />
-  <remove-project name="CyanogenMod/android_frameworks_av" />
-  <remove-project name="CyanogenMod/android_frameworks_base" />
-  <remove-project name="CyanogenMod/android_frameworks_native" />
-  <remove-project name="CyanogenMod/android_system_core" />
-  <remove-project name="CyanogenMod/android_system_extras" />
-  <remove-project name="CyanogenMod/android_external_sqlite" />
-  <remove-project name="CyanogenMod/android_external_libpng" />
-  <remove-project name="CyanogenMod/android_external_dhcpcd" />
-  <remove-project name="CyanogenMod/android_external_speex" />
-  <remove-project name="CyanogenMod/android_external_lz4" />
-  <remove-project name="CyanogenMod/android_external_lzma" />
-  <remove-project name="CyanogenMod/android_packages_apps_Settings" />
-  <remove-project name="CyanogenMod/android_packages_apps_Snap" />
-  <remove-project name="CyanogenMod/android_libcore" />
-  <remove-project name="CyanogenMod/android_external_sepolicy" />
+<!-- One Plus One Bacon Vendor Replacement -->
 
-  <!-- Repo Replacements CyanogenMod -->
+
+<project name="TheMuppets/proprietary_vendor_oppo" revision="cm-13.0" remote="gh" path="vendor/oppo"/>
+<project name="jgcaap/proprietary_vendor_oneplus" revision="cm-13.0" remote="bb" path="vendor/oneplus"/>
+<project name="jgcaap/proprietary_vendor_oppo" revision="android-6.0" remote="bb" path="vendor/coloros"/>
+
+ <!-- Repo Removes CyanogenMod -->
+
+<remove-project name="CyanogenMod/android_vendor_cm"/>
+<remove-project name="CyanogenMod/android_build"/>
+<remove-project name="CyanogenMod/android_art"/>
+<remove-project name="CyanogenMod/android_bionic"/>
+<remove-project name="CyanogenMod/android_frameworks_av"/>
+<remove-project name="CyanogenMod/android_frameworks_base"/>
+<remove-project name="CyanogenMod/android_frameworks_native"/>
+<remove-project name="CyanogenMod/android_frameworks_support"/>
+<remove-project name="CyanogenMod/android_system_core"/>
+<remove-project name="CyanogenMod/android_external_sqlite"/>
+<remove-project name="platform/external/libpng"/>
+<remove-project name="CyanogenMod/android_external_dhcpcd"/>
+<remove-project name="CyanogenMod/android_external_speex"/>
+<remove-project name="CyanogenMod/android_packages_apps_Settings"/>
+<remove-project name="CyanogenMod/android_packages_apps_Snap"/>
+<remove-project name="CyanogenMod/android_libcore"/>
+<remove-project name="CyanogenMod/android_external_sepolicy"/>
+
+<!-- Repo Replacements CyanogenMod -->
+
 
   <project name="jgcaaprom/android_vendor_cm" path="vendor/cm" remote="gh" revision="cm-13.0" />
   <project name="jgcaaprom/android_build" path="build" remote="gh" revision="cm-13.0" />
@@ -68,9 +75,6 @@
   <project name="jgcaaprom/android_external_libpng" path="external/libpng" remote="gh" revision="cm-13.0" />
   <project name="jgcaaprom/android_external_dhcpcd" path="external/dhcpcd" remote="gh" revision="cm-13.0" />
   <project name="jgcaaprom/android_external_sepolicy" path="external/sepolicy" remote="gh" revision="cm-13.0" />
-  <project name="jgcaaprom/android_external_square_dagger" path="external/square/dagger" remote="gh" revision="cm-13.0" />
-  <project name="jgcaaprom/android_external_lzma" path="external/lzma" remote="gh" revision="cm-13.0" />
-  <project name="jgcaaprom/android_external_lz4" path="external/lz4" remote="gh" revision="cm-13.0" />
   <project name="jgcaaprom/android_libcore" path="libcore" remote="gh" revision="cm-13.0" />
 
   <!-- Repo Removes Platform -->
@@ -79,11 +83,15 @@
   <remove-project name="platform/external/proguard" />
   <remove-project name="platform/external/webp" />
   <remove-project name="platform/ndk" />
+  <remove-project name="platform/prebuilts/ndk"/>
+  <remove-project name="platform/external/jemalloc"/>
 
   <!-- Repo Replacements Platform -->
 
   <project name="jgcaaprom/external_chromium-webview-1" path="external/chromium-webview" remote="gh" revision="mm6.0" />
   <project name="jgcaaprom/android_ndk" path="ndk" remote="gh" revision="cm-13.0" />
+  <project name="jgcaaprom/external_jemalloc" revision="master" remote="gh" path="external/jemalloc"/>
+  <project name="jgcaaprom/android_prebuilt_ndk" revision="cm-13.0" remote="gh" path="prebuilts/ndk"/>
   <project name="jgcaaprom/android_external_proguard" path="external/proguard" remote="gh" revision="cm-13.0" />
   <project name="jgcaaprom/android_external_webp" path="external/webp" remote="gh" revision="cm-13.0" />
 
