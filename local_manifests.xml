@@ -33,8 +33,8 @@
 
 
 <project name="TheMuppets/proprietary_vendor_oppo" revision="cm-13.0" remote="gh" path="vendor/oppo"/>
-<project name="jgcaap/proprietary_vendor_oneplus" revision="cm-13.0" remote="bb" path="vendor/oneplus"/>
-<project name="jgcaap/proprietary_vendor_oppo" revision="android-6.0" remote="bb" path="vendor/coloros"/>
+<project name="jgcaaprom/proprietary_vendor_oneplus" revision="cm-13.0" remote="gh" path="vendor/oneplus"/>
+<project name="DonkeyCoyote/proprietary_vendor_oppo" revision="android-6.0" remote="gh" path="vendor/coloros"/>
 
  <!-- Repo Removes CyanogenMod -->
 
